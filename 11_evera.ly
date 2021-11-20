@@ -155,18 +155,18 @@
       ят а -- ро -- мат.
     }
     \addlyrics {
-        Slan -- tse -- to grey,   ga --
-      li s'la -- chi tsve -- ten -- tsa i
+        Slan -- tse -- to grei,   ga --
+      li s'la -- tschi tsve -- ten -- tsa i
       tre -- vi i nas. Na ra ni --
-      na vaz -- tor -- zhe -- no ig --
-      ra -- em niy.  Vaz -- duh
-      bla -- go -- dat,  ptich -- ki
+      na vas -- tor -- je -- no ig --
+      ra -- em nii.  Vas -- duh
+      bla -- go -- dat,  ptitsch -- ki
       hvar -- kat ve -- se -- lo nad nas.
-      Pri -- ro -- da -- ta si -- ya -- e
-      tsya -- la v'kra -- so -- ta.  Ros --
+      Pri -- ro -- da -- ta si -- ja -- e
+      tsja -- la v'kra -- so -- ta.  Ros --
       na tre -- vi -- tsa bles -- na -- la
-      v'el -- maz. Tsve -- tya -- ta le --
-      yat a -- ro -- mat.}
+      v'el -- mas. Tsve -- tja -- ta le --
+      jat a -- ro -- mat.}
 
       \header {
         title = \markup \column \normal-text \fontsize #2.5 {
