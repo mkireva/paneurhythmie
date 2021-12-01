@@ -79,65 +79,63 @@
 
     \new Voice \relative c' {
       \clef treble
-      \key a \minor
+      \key a \major
       \time 3/4
-      \tempo \markup {
-        % make tempo note smaller
-        \concat {
-          "Allegro moderato  " \normal-text { "(" }
-          \teeny \general-align #Y #DOWN \note #"4" #0.8
-          \normal-text { " = 69)" }
-        }
-      }
       \autoBeamOff
-      \repeat volta 2 {
-        a2 a8 b8 | c2 d4 | e2 e4 | e2. | f2 e8 dis |e2 c'4 | \break
 
-        b2 gis4 | a2. | a2 g8 f8 | e2 d4 | c2 d4 | e2. | a,2 a8 ( [ b8 ] ) | \break
 
-        c2 b4 | c2 b4| a2. | a2 a8 ( [ b8 ] ) |   c2 b4 | c2 b4| a2. |\break
-      }
+      cis2 e4 | a2 gis4 | a2  \grace { fis16 ([gis16] } fis4 )
+      | fis2 d4 | b2 cis8 [e8] | fis2   \grace { e16 ([fis16] } e4 ) \break
+
+      e2 cis4 | cis2. | cis'2 cis4| d2  cis4 |   \grace {cis16 ([d16] } cis2 ) b4 | \grace {b16 ([cis16] } b2 ) a4 \break
+
+      a2 gis4 | gis2 fis4 | fis2 e4 | e2. | fis2 e4 | b'2 cis4 | \break
+
+      a2.(|a2.)| fis2 fis4 | fis2 gis4 | cis2 b4 | fis2 gis4 | a2.(| a2.) | \break
+
+
     }
 
     \addlyrics {
-      Пър -- ви -- ят ден на про -- лет -- та,
+      Бляс -- ка -- ви звез -- ди -- бри -- лян -- ти
+      свет -- ли_ска -- за -- ни -- я мъл -- вят.
+      Гре -- е чис -- та -- та лу -- на,
+      без -- спир ле -- ти по сво -- я път
+      по не -- бес -- на шир.
+      И ден -- ят прис -- ти -- га след нощ -- та.
+    }
+    \addlyrics {
+      
+          Bljas -- ka -- vi sves -- di -- bri -- ljan -- ti
+      svet -- li_ska -- sa -- ni -- ja mal -- vjat.
+      Gre -- e tschis -- ta -- ta lu -- na,
+      bes -- spir le -- ti po svo -- ja pat
+      po ne -- bes -- na schir.
+      I den -- jat pris -- ti -- ga sled nost -- ta.
+    }
+    
 
-      пър -- ви -- ят ден на ра -- дост -- та,
 
-      пър -- ви -- ят ден на лю -- бов  -- та
-
-      но -- сят си -- ла и жи -- вот,
-
-      но -- сят си -- ла и жи -- вот.}
-      \addlyrics {  Par -- vi -- yat den na pro -- let -- ta,
-
-      par -- vi -- yat den na ra -- dost -- ta,
-
-      par -- vi -- yat den na lyu -- bov  -- ta
-
-      no -- syat si -- la i zhi -- vot,
-
-      no -- syat si -- la i zhi -- vot.}
-
-      \header {
-        title = \markup \column \normal-text \fontsize #2.5 {
-          \center-align
-          \line { Първият ден на пролетта}
-          \vspace #-0.6
-          \center-align
-          \line \fontsize #-3 { Parviya den na proletta }
-          \vspace #-0.8
-          \center-align
-          \line \fontsize #-3 { " " }
-        }
+    \header {
+      title = \markup \column \normal-text \fontsize #2.5 {
+        \center-align
+        \line { 4. Възлизане}
+        \vspace #-0.6
+        \center-align
+        \line \fontsize #-3 { 4. Vaslizane }
+        \vspace #-0.8
+        \center-align
+        \line \fontsize #-3 { " " }
       }
+    }
 
-      \midi{}
+    \midi{}
 
-    } % score
+  } % score
 
 
-    % include foreign translation(s) of the song
-    \include "lyrics_de/01_probuzhdane_lyrics_de.ly"
 
-  } % bookpart
+  % include foreign translation(s) of the song
+  \include "lyrics_de/4_vaslizane_lyrics_de.ly"
+
+} % bookpart

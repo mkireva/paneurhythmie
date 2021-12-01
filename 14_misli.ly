@@ -77,67 +77,69 @@
       }
     } % layout
 
-    \new Voice \relative c' {
+    \new Voice \absolute {
       \clef treble
-      \key a \minor
-      \time 3/4
+      \key d \major
+      \time 8/4
       \tempo \markup {
         % make tempo note smaller
         \concat {
-          "Allegro moderato  " \normal-text { "(" }
+          "Moderato " \normal-text { "(" }
           \teeny \general-align #Y #DOWN \note #"4" #0.8
           \normal-text { " = 69)" }
         }
       }
       \autoBeamOff
-      \repeat volta 2 {
-        a2 a8 b8 | c2 d4 | e2 e4 | e2. | f2 e8 dis |e2 c'4 | \break
+      a4 d'2  b'4 a'4
+      fis'4 a'2 ^\fermata \bar "dashed"
+      a4 d'2  b'4 a'4
+      fis'4 a'2 ^\fermata \break | % 3
+      \time 9/8  | % 3
 
-        b2 gis4 | a2. | a2 g8 f8 | e2 d4 | c2 d4 | e2. | a,2 a8 ( [ b8 ] ) | \break
+      fis'8 \repeat volta 2 {
 
-        c2 b4 | c2 b4| a2. | a2 a8 ( [ b8 ] ) |   c2 b4 | c2 b4| a2. |\break
+        fis'4 fis'8 fis'4 fis'8
+        fis'4 g'8 |
+        a'4 a'8  b'4 a'8
+        a'4 fis'8 \break | % 6
+        a'4 g'8 g'4 fis'8
+        fis'4 e'
       }
     }
 
     \addlyrics {
-      Пър -- ви -- ят ден на про -- лет -- та,
+      Мис -- ли, пра -- во мис -- ли. Мис
+      -- ли, пра -- во мис -- ли. Све -- ще
+      -- ни мис -- ли за жи -- во -- та
+      ти кре -- пи. Све -- ще -- ни мис --
+      ли за жи -- во -- та ти кре -- пи.
+      Све -- во -- та ти кре -- пи.
+      Кре -- пи, кре -- пи, кре -- пи.
+      Све -- ще -- ни мис -- ли за жи --
+      во -- та ти кре -- пи.  Кре --
+      во -- та ти кре -- пи.
+    }
+    \addlyrics {}
 
-      пър -- ви -- ят ден на ра -- дост -- та,
-
-      пър -- ви -- ят ден на лю -- бов  -- та
-
-      но -- сят си -- ла и жи -- вот,
-
-      но -- сят си -- ла и жи -- вот.}
-      \addlyrics {  Par -- vi -- yat den na pro -- let -- ta,
-
-      par -- vi -- yat den na ra -- dost -- ta,
-
-      par -- vi -- yat den na lyu -- bov  -- ta
-
-      no -- syat si -- la i zhi -- vot,
-
-      no -- syat si -- la i zhi -- vot.}
-
-      \header {
-        title = \markup \column \normal-text \fontsize #2.5 {
-          \center-align
-          \line { Първият ден на пролетта}
-          \vspace #-0.6
-          \center-align
-          \line \fontsize #-3 { Parviya den na proletta }
-          \vspace #-0.8
-          \center-align
-          \line \fontsize #-3 { " " }
-        }
+    \header {
+      title = \markup \column \normal-text \fontsize #2.5 {
+        \center-align
+        \line { Мисли }
+        \vspace #-0.6
+        \center-align
+        \line \fontsize #-3 { Misli }
+        \vspace #-0.8
+        \center-align
+        \line \fontsize #-3 { " " }
       }
+    }
 
-      \midi{}
+    \midi{}
 
-    } % score
+  } % score
 
 
-    % include foreign translation(s) of the song
-    \include "lyrics_de/01_probuzhdane_lyrics_de.ly"
+  % include foreign translation(s) of the song
+  %\include "lyrics_de/lyrics_de_file_name.ly"
 
-  } % bookpart
+} % bookpart
