@@ -105,7 +105,7 @@
       И ден -- ят прис -- ти -- га след нощ -- та.
     }
     \addlyrics {
-      
+
           Bljas -- ka -- vi sves -- di -- bri -- ljan -- ti
       svet -- li_ska -- sa -- ni -- ja mal -- vjat.
       Gre -- e tschis -- ta -- ta lu -- na,
@@ -113,7 +113,7 @@
       po ne -- bes -- na schir.
       I den -- jat pris -- ti -- ga sled nost -- ta.
     }
-    
+
 
 
     \header {
@@ -129,11 +129,12 @@
       }
     }
 
+
     \midi{}
 
   } % score
 
-
+ 
 
   % include foreign translation(s) of the song
   \include "lyrics_de/4_vaslizane_lyrics_de.ly"
